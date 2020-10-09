@@ -11,6 +11,8 @@ import javax.ejb.Stateful;
 @Stateful
 public class CarritoDeSaludos implements CarritoDeSaludosRemote {
 	
+	SaludoBean saludo;
+	
 	private List<String> saludos = new ArrayList<>();
 
     /**
@@ -21,15 +23,16 @@ public class CarritoDeSaludos implements CarritoDeSaludosRemote {
     }
 
 	@Override
-	public void agregarSaludos() {
-		// TODO Auto-generated method stub
+	public void agregarSaludos(String nombre) {
+		
+		saludos.add(saludo.saludar(nombre));
 		
 	}
 
 	@Override
 	public List<String> obtenerSaludos() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return saludos;
 	}
     
 

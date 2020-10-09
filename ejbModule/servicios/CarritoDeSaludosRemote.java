@@ -7,9 +7,8 @@ import javax.ejb.Remote;
 @Remote
 public interface CarritoDeSaludosRemote {
 	
-	void agregarSaludos();
+	void agregarSaludos(String nombre);
 	
 	List<String> obtenerSaludos();
 	
-
 }
