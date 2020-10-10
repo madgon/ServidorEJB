@@ -1,11 +1,13 @@
 package servicios;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
 
+//Stigma: Alvaro De Leon, Carlos Suarez, Jose Madrid y Santiago Da Silva
 /**
  * Session Bean implementation class CarritoDeSaludos
  */

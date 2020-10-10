@@ -1,7 +1,10 @@
 package servicios;
 
 import javax.ejb.LocalBean;
+
 import javax.ejb.Stateless;
+
+//Stigma: Alvaro De Leon, Carlos Suarez, Jose Madrid y Santiago Da Silva
 
 /**
  * Session Bean implementation class SaludoBean
