@@ -3,6 +3,7 @@ package servicios;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateful;
 
 /**
@@ -10,7 +11,7 @@ import javax.ejb.Stateful;
  */
 @Stateful
 public class CarritoDeSaludos implements CarritoDeSaludosRemote {
-	
+	@EJB
 	SaludoBean saludo;
 	
 	private List<String> saludos = new ArrayList<>();
